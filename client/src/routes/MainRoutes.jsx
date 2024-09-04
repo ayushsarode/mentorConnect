@@ -10,6 +10,7 @@ import Join from "../components/Pages/Auth/login";
 import Home from "../components/Pages/Home/home";
 import MentorMeet from "../components/Pages/Mentors/MentorMeet";
 import Room from "../components/Pages/Room/Room";
+import MentorPage from "../components/Pages/Mentors/MentorPage";
 function MainRoutes() {
   return (
     <Router>
@@ -20,6 +21,7 @@ function MainRoutes() {
         <Route path="/about" element={<About />} />
         <Route path="/domains" element={<Domains />} />
         <Route path="/mentor" element={<Mentor />} />
+        <Route path="/mentor/:id" element={<MentorPage />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/join" element={<Join />} />
