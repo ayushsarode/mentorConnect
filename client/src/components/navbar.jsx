@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-const navbar = () => {
+const Navbar = () => {
   return (
-    <div className="navbar bg-white">
+    <div className="navbar rounded-full mx-auto text-white w-[98%] text-2xl h-[50px] bg-orange-500 mt-4 px-8 justify-between">
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div tabIndex={0} role="button" className="btn btn-primary lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -23,41 +23,34 @@ const navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <li><Link to="/about">About</Link></li>
-            <li>
-              <Link to="/domains">Domains</Link>
-              <ul className="p-2">
-                <li><Link to="/domains/submenu1">Submenu 1</Link></li>
-                <li><Link to="/domains/submenu2">Submenu 2</Link></li>
-              </ul>
-            </li>
-            <li><Link to="/mentor">Mentor</Link></li>
+            className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow text-white">
+          <li><Link to="/about" className='btn btn-ghost px-5'>About</Link></li>
+          <li>
+            <Link to="/domains" className='btn btn-ghost px-5'>Domains</Link>
+          </li>
+          <li><Link to="/mentor" className='btn btn-ghost px-5'>Mentor</Link></li>
+          <li><Link to="/contacts" className='btn btn-ghost px-5'>Contacts</Link></li>
+          <li><Link to="/faq" className='btn btn-ghost px-5'>FAQ</Link></li>
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost text-xl">daisyUI</Link>
+        <Link to="/" className="btn btn-ghost text-xl">mentorConnect</Link>
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li><Link to="/about">About</Link></li>
+      <div className="navbar-center hidden lg:flex ">
+        <ul className="menu menu-horizontal gap-5">
+          <li><Link to="/about" className='btn btn-ghost px-5'>About</Link></li>
           <li>
-            <details>
-              <summary>Domains</summary>
-              <ul className="p-2">
-                <li><Link to="/domains/submenu1">Submenu 1</Link></li>
-                <li><Link to="/domains/submenu2">Submenu 2</Link></li>
-              </ul>
-            </details>
+            <Link to="/domains" className='btn btn-ghost px-5'>Domains</Link>
           </li>
-          <li><Link to="/contacts">Contacts</Link></li>
+          <li><Link to="/mentor" className='btn btn-ghost px-5'>Mentor</Link></li>
+          <li><Link to="/contacts" className='btn btn-ghost px-5'>Contacts</Link></li>
+          <li><Link to="/faq" className='btn btn-ghost px-5'>FAQ</Link></li>
         </ul>
       </div>
       <div className="navbar-end">
-        <Link to="/join" className="btn">Join</Link>
+        <Link to="/join" className="btn px-6">Join</Link>
       </div>
     </div>
-    
-  )
+  );
 }
 
-export default navbar
+export default Navbar;
