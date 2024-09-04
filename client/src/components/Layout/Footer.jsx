@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="footer bg-base-200 text-base-content p-10 px-20">
+    <footer className="footer bg-indigo-600 text-white  p-10 px-20">
       <aside>
         <p className="text-5xl font-bold tracking-tight text-foreground">
           mentorConnect
