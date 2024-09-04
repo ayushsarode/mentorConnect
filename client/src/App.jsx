@@ -7,14 +7,14 @@ import FAQ from './routes/FAQ';
 import Join from './routes/login';
 import Navbar from './components/Navbar';
 import './App.css';
-import home from './routes/home';
+import Home from './routes/home';
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-      <Route path="/" element={<home />} />
+      <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/domains" element={<Domains />} />
         <Route path="/mentor" element={<Mentor />} />
