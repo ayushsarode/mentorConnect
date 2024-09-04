@@ -1,13 +1,6 @@
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import About from './routes/about';
-import Domains from './routes/domain';
-import Mentor from './routes/mentors';
-import Contacts from './routes/contact';
-import FAQ from './routes/FAQ';
-import Join from './routes/login';
-import Navbar from './components/Navbar';
-import './App.css';
-import Home from './routes/home';
+import "./App.css";
+
+import MainRoutes from "./routes/MainRoutes";
 
 function App() {
   return (
@@ -23,7 +16,6 @@ function App() {
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/join" element={<Join />} />
-        <Route path="/meet" element={<Join />} />
       </Routes>
     </Router>
 
