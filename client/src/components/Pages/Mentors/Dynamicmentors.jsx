@@ -3,7 +3,7 @@ import React from "react";
 
 const Dynamicmentors = ({ mentorId }) => {
   // Find the mentor by ID
-  const mentor = mentor.find((m) => m.id === mentorId);
+  const mentor = mentorsData.find((m) => m.id === mentorId);
 
   if (!mentor) {
     return <div>Mentor not found</div>;
