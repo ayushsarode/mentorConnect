@@ -1,9 +1,9 @@
-import React from 'react';
-import mentors from '../data/mentorsData'; // Adjust the path as necessary
+import React from "react";
 
-const Mentor = ({ mentorId }) => {
+
+const Dynamicmentors = ({ mentorId }) => {
   // Find the mentor by ID
-  const mentor = mentors.find((m) => m.id === mentorId);
+  const mentor = mentor.find((m) => m.id === mentorId);
 
   if (!mentor) {
     return <div>Mentor not found</div>;
@@ -12,7 +12,6 @@ const Mentor = ({ mentorId }) => {
   return (
     <div className="h-auto bg-orange-300 text-black">
       <div className="flex flex-col items-center ">
-        
         <div className="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm bg-white shadow-xl rounded-lg text-gray-900">
           <div className="rounded-t-lg h-32 overflow-hidden bg-pink-300 w-[24rem]">
             {/* You can add an image or other content here */}
@@ -42,4 +41,4 @@ const Mentor = ({ mentorId }) => {
   );
 };
 
-export default Mentor;
+export default Dynamicmentors;
