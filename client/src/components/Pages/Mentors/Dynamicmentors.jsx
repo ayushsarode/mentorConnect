@@ -1,9 +1,15 @@
+/* eslint-disable react/prop-types */
 import React from "react";
-
+import mentors from "../../../data/mentorsData";
 
 const Dynamicmentors = ({ mentorId }) => {
-  // Find the mentor by ID
-  const mentor = mentorsData.find((m) => m.id === mentorId);
+  const [mentor, setMentor] = React.useState({});
+
+  React.useEffect(() => {
+    const foundMentor = mentors.find((m) => m.id === Number(mentorId));
+    setMentor(foundMentor);
+    console.log(foundMentor);
+  }, [mentorId]);
 
   if (!mentor) {
     return <div>Mentor not found</div>;
