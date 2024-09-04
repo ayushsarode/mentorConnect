@@ -11,8 +11,10 @@ import Home from './routes/home';
 
 function App() {
   return (
-    <Router>
+    
+    <Router >
       <Navbar />
+
       <Routes>
       <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -23,6 +25,7 @@ function App() {
         <Route path="/join" element={<Join />} />
       </Routes>
     </Router>
+
   );
 }
 
