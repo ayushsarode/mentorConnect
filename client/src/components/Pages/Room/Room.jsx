@@ -9,7 +9,7 @@ const Room = () => {
   useEffect(() => {
     const initializeMeeting = async () => {
       const appID = 1322683436;
-      const serverSecret = import.meta.env.VITE_API_URL;
+      const serverSecret = import.meta.env.VITE_SERVER_SECRET;
       const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(
         appID,
         serverSecret,
@@ -35,9 +35,14 @@ const Room = () => {
   }, [roomId]);
 
   return (
-    <div className="min-h-[80vh] flex items-center justify-center">
-      <div ref={meetingRef} style={{ width: "90%", height: "70%" }} />
-    </div>
+<div className="min-h-[80vh] flex items-center justify-center">
+  <div
+    ref={meetingRef}
+    className="w-full max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%]"
+  />
+</div>
+
+
   );
 };
 
