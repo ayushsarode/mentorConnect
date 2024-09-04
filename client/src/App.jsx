@@ -23,6 +23,7 @@ function App() {
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/join" element={<Join />} />
+        <Route path="/meet" element={<Join />} />
       </Routes>
     </Router>
 

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <div className="navbar rounded-full mx-auto text-white w-[98%] text-2xl h-[50px] bg-orange-500 mt-4 px-8 justify-between">
+    <div className="navbar mx-auto text-white  text-2xl h-[50px] bg-indigo-600  px-8 justify-between">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-primary lg:hidden">
@@ -47,7 +47,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link to="/join" className="btn px-6">Join</Link>
+        <Link to="/join" className="btn rounded-md text-xl font-bold px-5">Join</Link>
       </div>
     </div>
   );
