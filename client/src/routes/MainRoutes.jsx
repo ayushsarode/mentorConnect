@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "../components/Layout/navbar";
 import About from "../components/Pages/About/about";
 import Domains from "../components/Pages/Domain/domain";
-import Mentor from "../components/Pages/Mentors/Dynamicmentors";
+import Mentor from "../components/Pages/Mentors/Mentor";
 import Contacts from "../components/Pages/Contact/contact";
 import FAQ from "../components/Pages/Faq/FAQ";
 import Join from "../components/Pages/Auth/login";
