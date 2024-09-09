@@ -1,12 +1,12 @@
 import "./App.css";
-
 import MainRoutes from "./routes/MainRoutes";
-
+import { UserContextProvider } from "./context/userContext";
 
 function App() {
   return (
-<MainRoutes/>
-
+    <UserContextProvider>
+      <MainRoutes />
+    </UserContextProvider>
   );
 }
 
